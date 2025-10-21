@@ -1,0 +1,32 @@
+<style>
+  button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 13px 30px;
+    border-radius: 10px;
+  }
+  input {
+    border: 3px solid red;
+    outline: none;
+    padding: 7px 20px;
+  }
+</style>
+
+<h1>Javascript</h1>
+<button onclick="fn()">Login</button>
+
+<input placeholder="type username" /> <br /><br />
+
+<script>
+  function fn() {
+    document.querySelector("h1").style.color = "red";
+    var img = document.createElement("img");
+    img.src =
+      "https://i.pinimg.com/originals/90/c0/51/90c051810494297069df2b6b9a450c15.jpg";
+    img.width = "150";
+    img.height = "150";
+    img.style.marginRight = "10px";
+    document.querySelector("body").appendChild(img);
+  }
+</script>
