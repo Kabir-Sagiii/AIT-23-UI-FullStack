@@ -1,0 +1,105 @@
+/* Base Styles (Global Reset + Default Layout) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  width: 270px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.card h3 {
+  margin: 17px 0px;
+}
+
+.card p {
+  margin-bottom: 15px;
+}
+
+.card button {
+  padding: 10px 20px;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+/* ------------------------------ */
+/* 📱 Mobile Devices (Up to 600px) */
+/* ------------------------------ */
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+/* ------------------------------ */
+/* 📱📲 Tablets (601px–900px) */
+/* ------------------------------ */
+@media (min-width: 601px) and (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+/* ------------------------------ */
+/* 💻 Laptops (901px–1200px) */
+/* ------------------------------ */
+@media (min-width: 901px) and (max-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+/* ------------------------------ */
+/* 🖥️ Desktops (1201px–1600px) */
+/* ------------------------------ */
+@media (min-width: 1201px) and (max-width: 1600px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+/* ------------------------------ */
+/* 📺 Large Screens / TV (1601px and above) */
+/* ------------------------------ */
+@media (min-width: 1601px) {
+  .grid-container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .card {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+}
