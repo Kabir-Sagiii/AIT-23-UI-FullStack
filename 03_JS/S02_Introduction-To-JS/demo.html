@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function f1() {
+        document.querySelector("h1").style.color = "red";
+        var img = document.createElement("img");
+        img.width = "300";
+        img.height = "300";
+        img.src =
+          "https://wallpapers.com/images/hd/professional-profile-pictures-1080-x-1080-460wjhrkbwdcp1ig.jpg";
+        document.querySelector("body").appendChild(img);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>Hello Javascript</h1>
+    <button onclick="f1()">Submit</button><br />
+  </body>
+</html>
