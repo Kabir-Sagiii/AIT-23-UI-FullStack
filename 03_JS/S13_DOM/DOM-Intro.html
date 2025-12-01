@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function fnGetDomElement() {
+        //accessing the dom element
+        var h1_DomElement = document.querySelector("h1");
+
+        //changing the content of h1 element
+        h1_DomElement.textContent = "Hello, Javascript !!!";
+        h1_DomElement.style.color = "red";
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>Welcome to JS</h1>
+      <button onclick="fnGetDomElement()">Submit</button>
+    </div>
+  </body>
+</html>

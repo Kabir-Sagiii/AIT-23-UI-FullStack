@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function fnGetDomElement() {
+        //accessing the dom element
+        var h1_DomElement = document.querySelector("h1");
+        var count = 0;
+        for (var key in document) {
+          console.log(key);
+          count++;
+        }
+
+        console.log(count);
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>Welcome to JS</h1>
+      <button onclick="fnGetDomElement()">Submit</button>
+    </div>
+  </body>
+</html>
