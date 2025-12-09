@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function createImage() {
+        var imageDomElement = document.createElement("img");
+        imageDomElement.src =
+          "https://static.vecteezy.com/system/resources/previews/038/974/578/non_2x/ai-generated-professional-portrait-of-a-competent-woman-free-photo.jpg";
+        imageDomElement.width = "300";
+        imageDomElement.height = "300";
+
+        imageDomElement.onclick = function () {
+          imageDomElement.remove();
+          h2.remove();
+        };
+
+        var h2 = document.createElement("h2");
+        h2.textContent = "Image Element";
+
+        // var body = document.querySelector("body");
+        // body.appendChild(imageDomElement);
+
+        var button = document.querySelector("button");
+
+        button.before(imageDomElement);
+        button.after(h2);
+        // body.prepend(h2);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>Create Dom Element</h1>
+    <button onclick="createImage()">Submit</button><br /><br />
+  </body>
+</html>

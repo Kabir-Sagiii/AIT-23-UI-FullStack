@@ -1,0 +1,31 @@
+<script>
+  function f1() {
+    var img = document.createElement("img");
+    img.width = "100";
+    img.height = "100";
+    img.style.margin = "20px";
+    img.style.border = "2px solid red";
+    img.src =
+      "https://tse1.mm.bing.net/th/id/OIP.fBsCxHaiO6Z7ZK2lPCacYAHaEn?rs=1&pid=ImgDetMain&o=7&rm=3";
+
+    img.onclick = function () {
+      img.remove();
+    };
+    document.querySelector("body").appendChild(img);
+  }
+</script>
+<style>
+  button {
+    background-color: red;
+    color: white;
+  }
+  input {
+    border: 2px solid green;
+  }
+</style>
+
+<button onclick="f1()">Log In</button>
+
+<input type="text" placeholder="username" />
+
+<br /><br />

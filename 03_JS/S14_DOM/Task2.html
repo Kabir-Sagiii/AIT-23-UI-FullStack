@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        text-align: center;
+      }
+      div button {
+        margin-right: 50px;
+      }
+    </style>
+
+    <script>
+      function changeToReactJS() {
+        var img_dom = document.querySelector("img");
+        img_dom.src =
+          "https://miro.medium.com/v2/resize:fit:1200/1*4yHqe451juQRQeJ20kS0Ew.jpeg";
+      }
+      function changeToNodeJS() {
+        var img_dom = document.querySelector("img");
+        img_dom.src =
+          "https://kdydesign.github.io/2017/07/15/nodejs-npm-tutorial/cover.png";
+      }
+    </script>
+  </head>
+
+  <body>
+    <div>
+      <img
+        src="https://miro.medium.com/v2/resize:fit:1200/1*4yHqe451juQRQeJ20kS0Ew.jpeg"
+        width="500"
+        height="300"
+        alt=""
+      />
+      <br /><br />
+      <button onclick="changeToReactJS()">React JS</button>
+      <button onclick="changeToNodeJS()">NodeJS</button>
+    </div>
+  </body>
+</html>

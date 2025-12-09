@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function fnGetDomElements() {
+        // var p_dom = document.querySelector("#p2");
+        // p_dom.style.color = "red";
+
+        var p_domCollection = document.querySelectorAll("p");
+        var h1_dom = document.getElementById("title");
+        var sectionCollection = document.getElementsByClassName("long-para");
+
+        sectionCollection[0].style.backgroundColor = "black";
+        sectionCollection[0].style.color = "white";
+        sectionCollection[0].style.padding = "20px";
+
+        p_domCollection[0].style.color = "green";
+        p_domCollection[1].style.color = "coral";
+        h1_dom.style.color = "blue";
+        h1_dom.textContent = "Adding New Content";
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1 id="title">Selector's in JS</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt debitis
+      quibusdam molestiae explicabo, vero odio accusantium, cupiditate,
+      doloribus laudantium tempora nulla sunt at provident illo rerum officia
+      omnis eos modi.
+    </p>
+
+    <p id="p2">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis tempore
+      reiciendis aut facilis quidem nisi, repudiandae repellat magnam quisquam
+      ut repellendus aliquam animi itaque ratione quo. Sequi, eligendi omnis
+      ducimus quis reiciendis quasi. Rerum officia a eligendi. Ipsam harum
+      minima sed esse impedit nesciunt, ea, deserunt quidem voluptate ratione
+      sequi assumenda porro mollitia odio rem repudiandae suscipit, eum quis
+      atque corporis alias. Laborum nulla quis quisquam earum. Iure, hic nemo
+      repellat perferendis et quibusdam fugiat sed dolorum tempora porro, error
+      ipsa sequi quidem eius dicta praesentium unde distinctio ipsam optio amet
+      quo odit nisi nihil aliquid? Non animi ducimus ipsa!
+    </p>
+
+    <section class="long-para">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit molestiae
+      doloremque, ea consectetur labore illo, quos quasi, accusantium hic
+      suscipit voluptatem doloribus. Blanditiis eos architecto, et ullam
+      sapiente totam id adipisci esse cupiditate temporibus doloribus non rerum!
+      Delectus dignissimos neque reprehenderit explicabo. Sed totam iusto
+      similique delectus est repellendus, consequatur maxime cum labore,
+      voluptatem atque hic id libero corporis repellat saepe quae. Alias maiores
+      facilis veniam omnis sunt distinctio rerum, quis explicabo eaque
+      laboriosam, dolor aspernatur accusamus at obcaecati adipisci atque non
+      iure. Iusto est id quod cumque recusandae dignissimos consectetur
+      voluptate quae quibusdam illum iste, quam ut ea quas, voluptates sint in
+      inventore minima doloremque? Earum temporibus voluptate deserunt minima
+      aspernatur velit voluptatum eos necessitatibus eveniet esse ab officia
+      ducimus quam quis repudiandae ut quidem excepturi reiciendis tenetur,
+      obcaecati maxime. Asperiores minima quam rerum voluptatibus velit ratione
+      temporibus eligendi earum numquam aliquid quaerat itaque ipsam quo autem
+      blanditiis, voluptas qui eaque fugit recusandae, nemo aliquam! Tenetur non
+      vel eius corporis! Facere fuga omnis animi eos esse dicta, recusandae
+      placeat laudantium et aspernatur quod vel, officiis asperiores aperiam
+      fugiat blanditiis modi minus! Delectus est repudiandae facilis corrupti
+      alias beatae, similique sequi eos dolorem, excepturi error architecto
+      dolore nihil dolorum nemo reiciendis eveniet! Quibusdam ratione facilis
+      eius blanditiis inventore, commodi placeat explicabo, enim voluptas
+      nesciunt suscipit nulla odit quod ipsum voluptatem repudiandae sed.
+      Explicabo sit facilis eius assumenda! Veniam nulla soluta doloremque
+      cumque impedit quidem assumenda itaque amet. Repudiandae explicabo
+      assumenda qui quod, alias nulla enim praesentium modi non quam quaerat
+      officia delectus dolore necessitatibus aliquam, odit incidunt quas
+      distinctio doloribus nesciunt consequatur et sit veritatis corrupti. Animi
+      tempora accusantium tenetur quidem, magnam nobis blanditiis architecto
+      quasi quis! Quam doloribus sint quod odio pariatur temporibus eaque quis
+      praesentium impedit. Voluptatum dolorum ducimus fuga? Aperiam eum autem,
+      tenetur eius ea dolorum delectus.
+    </section>
+
+    <button onclick="fnGetDomElements()">Submit</button>
+  </body>
+</html>
