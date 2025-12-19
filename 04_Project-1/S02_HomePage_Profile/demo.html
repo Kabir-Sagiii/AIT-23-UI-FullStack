@@ -1,0 +1,28 @@
+<script>
+  function f1() {
+    document.querySelector("input").style.border = "2px solid green";
+    var img = document.createElement("img");
+    img.width = "100";
+    img.height = "100";
+    img.src =
+      "https://img.freepik.com/premium-photo/portrait-young-professional-man-smiling_604472-8539.jpg";
+
+    img.onclick = function () {
+      img.remove();
+    };
+    document.querySelector("body").appendChild(img);
+  }
+</script>
+
+<style>
+  button {
+    background-color: black;
+    color: white;
+  }
+  input {
+    border: 2px solid red;
+  }
+</style>
+
+<button onclick="f1()">Log In</button>
+<input type="text" placeholder="username" /><br />
