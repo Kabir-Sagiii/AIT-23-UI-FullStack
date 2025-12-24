@@ -1,0 +1,23 @@
+main {
+  overflow-y: scroll;
+}
+#cart-table {
+  width: 1100px;
+  margin: 50px auto;
+  box-shadow: 0 0 10px brown;
+}
+#cart-table thead th {
+  padding: 20px;
+  color: green;
+}
+
+thead {
+  box-shadow: 0 0 10px black;
+}
+
+tbody img {
+  border-radius: 50%;
+}
+tbody tr {
+  margin-top: 50px;
+}

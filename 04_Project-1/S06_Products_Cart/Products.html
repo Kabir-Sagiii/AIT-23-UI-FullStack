@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Products Page</title>
+    <link rel="stylesheet" href="./Nav.css" />
+    <link rel="stylesheet" href="./Products.css" />
+    <script src="./Products.js"></script>
+  </head>
+
+  <body onload="createMultipleCards()">
+    <header>
+      <div id="nav">
+        <div id="brand">
+          <h1>AI- MART</h1>
+        </div>
+        <div id="menus">
+          <a href="Home.html">Home</a>
+          <a href="Profile.html">Profile</a>
+          <a href="Products.html">Products</a>
+          <a href="Contactus.html">ContactUs</a>
+        </div>
+        <div id="icons">
+          <a href="Cart.html"> <i class="bi bi-cart-check"></i></a>
+          <a href=""><i style="color: red" class="bi bi-power"></i></a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="categories">
+        <div class="category" onclick="filterProducts(`all`)">
+          <img
+            src="https://cdn.textstudio.com/output/sample/normal/9/2/0/5/all-logo-321-5029.png"
+            alt=""
+            width="70"
+            height="70"
+          />
+          <h3>ALL</h3>
+        </div>
+        <div class="category" onclick="filterProducts('electronics')">
+          <img
+            src="https://tse4.mm.bing.net/th/id/OIP.EE_ndsO6kcX6VmcLnBW97gHaEJ?rs=1&pid=ImgDetMain&o=7&rm=3"
+            alt=""
+            width="70"
+            height="70"
+          />
+          <h3>Electronics</h3>
+        </div>
+        <div class="category" onclick="filterProducts(`men's clothing`)">
+          <img
+            src="https://th.bing.com/th/id/R.daf855d4d8236832c22bac688a028efe?rik=7yuz474wLdPhJQ&riu=http%3a%2f%2fwrightwaybeautysupply.com%2fcdn%2fshop%2fcollections%2fmen_hair_care_1200x1200.jpg%3fv%3d1676256394&ehk=MKO%2b9%2fJcUvJPb%2fX18u8mpVSq%2fRHScC%2b%2bkC%2bg%2ft9nbqU%3d&risl=&pid=ImgRaw&r=0"
+            alt=""
+            width="70"
+            height="70"
+          />
+          <h3>Mens</h3>
+        </div>
+        <div class="category" onclick="filterProducts(`women's clothing`)">
+          <img
+            src="https://th.bing.com/th/id/R.c1e8b76ccc9fc699358fe0a0bdb63b34?rik=JqSIy9p9u%2b91WA&riu=http%3a%2f%2fell.h-cdn.co%2fassets%2f16%2f14%2f1600x800%2flandscape-1459974569-female-designers.jpg&ehk=EOoMjqEdxSRwLj9M64KsGEl1tQ59k469zvcYSvYTRpc%3d&risl=&pid=ImgRaw&r=0"
+            alt=""
+            width="70"
+            height="70"
+          />
+          <h3>Womens</h3>
+        </div>
+        <div class="category" onclick="filterProducts('kids')">
+          <img
+            src="https://www.cantechonline.com/wp-content/uploads/group-of-kids-with-cans-Tim-Tam-Tummy.jpeg"
+            alt=""
+            width="70"
+            height="70"
+          />
+          <h3>Kid's</h3>
+        </div>
+        <div class="category" onclick="filterProducts('furniture')">
+          <img
+            src="https://img.staticmb.com/mbcontent/images/crop/uploads/2022/7/What-is-IKEA-Furniture_0_1200.jpg"
+            alt=""
+            width="70"
+            height="70"
+          />
+          <h3>Furniture</h3>
+        </div>
+        <div class="category" onclick="filterProducts(`cosmetic`)">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/028/099/987/large_2x/beauty-cosmetic-makeup-product-brushes-lipstick-nail-polish-collection-on-white-background-generative-ai-free-photo.jpg"
+            alt=""
+            width="70"
+            height="70"
+          />
+          <h3>Cosmetics</h3>
+        </div>
+      </div>
+
+      <div id="products"></div>
+    </main>
+  </body>
+</html>

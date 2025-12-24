@@ -1,0 +1,261 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Contactus Page</title>
+    <link rel="stylesheet" href="./Nav.css" />
+  </head>
+
+  <body>
+    <header>
+      <div id="nav">
+        <div id="brand">
+          <h1>AI- MART</h1>
+        </div>
+        <div id="menus">
+          <a href="Home.html">Home</a>
+          <a href="Profile.html">Profile</a>
+          <a href="Products.html">Products</a>
+          <a href="Contactus.html">ContactUs</a>
+        </div>
+        <div id="icons">
+          <a href="Cart.html"> <i class="bi bi-cart-check"></i></a>
+          <a href=""><i style="color: red" class="bi bi-power"></i></a>
+        </div>
+      </div>
+    </header>
+    <main>
+
+    </main>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./Nav.css" />
+    <style>
+      :root {
+        --primary: #2563eb;
+        --secondary: #1e293b;
+        --bg: #f8fafc;
+        --text: #334155;
+        --border: #e2e8f0;
+        --radius: 12px;
+      }
+
+      /* body {
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      } */
+
+      .container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 40px 20px;
+      }
+
+      /* Header */
+      .contact-header {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .contact-header h1 {
+        font-size: 2.5rem;
+        color: var(--secondary);
+        margin-bottom: 10px;
+      }
+
+      .contact-header p {
+        max-width: 600px;
+        margin: auto;
+        color: #64748b;
+      }
+
+      /* Layout */
+      .contact-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+      }
+
+      /* Info Card */
+      .contact-info {
+        background: linear-gradient(135deg, var(--primary), #3b82f6);
+        color: #fff;
+        padding: 40px;
+        border-radius: var(--radius);
+      }
+
+      .contact-info h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+      }
+
+      .info-item {
+        margin-bottom: 20px;
+      }
+
+      .info-item span {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+
+      .info-item p {
+        opacity: 0.9;
+      }
+
+      /* Form Card */
+      .contact-form {
+        background: #fff;
+        padding: 40px;
+        border-radius: var(--radius);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      .contact-form h2 {
+        margin-bottom: 25px;
+        color: var(--secondary);
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        display: block;
+        font-size: 0.9rem;
+        margin-bottom: 6px;
+        font-weight: 600;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 12px 14px;
+        border-radius: 8px;
+        border: 1px solid var(--border);
+        outline: none;
+        transition: 0.3s;
+        font-size: 0.95rem;
+      }
+
+      .form-group input:focus,
+      .form-group textarea:focus {
+        border-color: var(--primary);
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+      }
+
+      .form-group textarea {
+        resize: none;
+        height: 130px;
+      }
+
+      .submit-btn {
+        background: var(--primary);
+        color: #fff;
+        padding: 14px;
+        border: none;
+        width: 100%;
+        border-radius: 8px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .submit-btn:hover {
+        background: #1d4ed8;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="nav">
+        <div id="brand">
+          <h1>AI- MART</h1>
+        </div>
+        <div id="menus">
+          <a href="Home.html">Home</a>
+          <a href="Profile.html">Profile</a>
+          <a href="Products.html">Products</a>
+          <a href="Contactus.html">ContactUs</a>
+        </div>
+        <div id="icons">
+          <a href="Cart.html"> <i class="bi bi-cart-check"></i></a>
+          <a href=""><i style="color: red" class="bi bi-power"></i></a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="contact-header">
+          <h1>Contact Us</h1>
+          <p>
+            We’d love to hear from you. Reach out to us for inquiries, support,
+            or collaboration opportunities.
+          </p>
+        </div>
+        <div class="contact-wrapper">
+          <!-- Contact Information -->
+          <div class="contact-info">
+            <h2>Get in Touch</h2>
+
+            <div class="info-item">
+              <span>📍 Address</span>
+              <p>123 Business Avenue, New York, USA</p>
+            </div>
+
+            <div class="info-item">
+              <span>📧 Email</span>
+              <p>contact@company.com</p>
+            </div>
+
+            <div class="info-item">
+              <span>📞 Phone</span>
+              <p>+1 (555) 123-4567</p>
+            </div>
+
+            <div class="info-item">
+              <span>🕒 Working Hours</span>
+              <p>Mon – Fri: 9:00 AM – 6:00 PM</p>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <h2>Send a Message</h2>
+
+            <form>
+              <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Your name" />
+              </div>
+
+              <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="you@example.com" />
+              </div>
+
+              <div class="form-group">
+                <label>Subject</label>
+                <input type="text" placeholder="How can we help?" />
+              </div>
+
+              <div class="form-group">
+                <label>Message</label>
+                <textarea placeholder="Write your message here..."></textarea>
+              </div>
+
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
