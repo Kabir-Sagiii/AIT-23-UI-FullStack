@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+
+  <body>
+    <script>
+      function createUI() {
+        const buttonDomElement = document.createElement("button");
+        buttonDomElement.textContent = "Javascript Button";
+        document.querySelector("body").appendChild(buttonDomElement);
+
+        const ol = document.createElement("ol");
+
+        const li1 = document.createElement("li");
+        const li2 = document.createElement("li");
+        const li3 = document.createElement("li");
+
+        li1.textContent = "html";
+        li2.textContent = "css";
+        li3.textContent = "js";
+
+        ol.appendChild(li1);
+        ol.appendChild(li2);
+        ol.appendChild(li3);
+
+        document.querySelector("body").appendChild(ol);
+      }
+
+      createUI();
+      createUI();
+      createUI();
+      createUI();
+      createUI();
+    </script>
+  </body>
+</html>
