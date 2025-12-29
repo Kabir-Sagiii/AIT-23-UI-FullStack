@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>h1 React Element</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script>
+      const div = React.createElement("div", null, [
+        React.createElement(
+          "div",
+          null,
+          React.createElement("h2", null, "Heading Element")
+        ),
+
+        React.createElement(
+          "div",
+          null,
+          React.createElement("p", null, "I ama Paragraph")
+        ),
+      ]);
+
+      ReactDOM.render(div, document.getElementById("root"));
+    </script>
+  </body>
+</html>

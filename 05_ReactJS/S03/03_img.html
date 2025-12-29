@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>h2,p,img React Element</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script>
+      //1 : React Elements
+
+      const h2 = React.createElement("h2", null, "React JS Introduction");
+
+      const p = React.createElement(
+        "p",
+        null,
+        "React JS is a JS Library for building UI"
+      );
+
+      const img = React.createElement("img", {
+        src: "https://glints.com/id/lowongan/wp-content/uploads/2020/10/logo-reactjs-1024x584.jpg",
+        width: "300",
+        height: "300",
+      });
+
+      //2 : Load React Elements in the DOM
+
+      ReactDOM.render([h2, p, img], document.getElementById("root"));
+    </script>
+  </body>
+</html>
