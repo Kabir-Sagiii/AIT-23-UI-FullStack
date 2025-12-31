@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="./03_Task.css" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function Card() {
+        return (
+          <div class="card">
+            <img
+              src="https://img.freepik.com/premium-photo/two-happy-children-boy-girl-are-holding-hands-walking-shopping-mall-they-are-both-carrying-shopping-bags_1187703-1446.jpg"
+              width="100%"
+              height="230"
+              alt=""
+            />
+            <h3>offer upto 50% off</h3>
+          </div>
+        );
+      }
+
+      function Container() {
+        return (
+          <div id="container">
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<Container />, document.getElementById("root"));
+    </script>
+  </body>
+</html>

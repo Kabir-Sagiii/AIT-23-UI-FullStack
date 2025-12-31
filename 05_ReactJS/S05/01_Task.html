@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="./01_Task.css" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      const container = (
+        <div id="container">
+          <h2>HTML</h2>
+          <p>
+            HTML stands for HyperText Markup Language and is used to create the
+            structure of web pages. It helps organize content using elements
+            that browsers can understand. With HTML, you can display text,
+            images, links, and other media on a website. Web browsers read HTML
+            files and show them as web pages. It is the basic foundation of all
+            websites.
+          </p>
+        </div>
+      );
+
+      const mainContainer = (
+        <div>
+          {container}
+          {container}
+          {container}
+          {container}
+        </div>
+      );
+
+      ReactDOM.render(mainContainer, document.getElementById("root"));
+
+      //   ReactDOM.render(
+      //     [container, container, container],
+      //     document.getElementById("root")
+      //   );
+    </script>
+  </body>
+</html>

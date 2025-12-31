@@ -1,0 +1,9 @@
+#container {
+  width: 800px;
+  height: 200px;
+  padding: 20px;
+  box-shadow: 0 0 10px green;
+  margin: 20px auto;
+  background-color: black;
+  color: white;
+}

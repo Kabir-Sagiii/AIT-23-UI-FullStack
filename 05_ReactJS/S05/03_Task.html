@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="./03_Task.css" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function createCard(imageUrl, offer) {
+        return (
+          <div class="card">
+            <img src={imageUrl} alt="" width="100%" height="230" />
+            <h3>{offer}</h3>
+          </div>
+        );
+      }
+
+      function multiCards() {
+        return (
+          <div id="container">
+            {createCard(
+              "https://img.freepik.com/premium-photo/two-happy-children-boy-girl-are-holding-hands-walking-shopping-mall-they-are-both-carrying-shopping-bags_1187703-1446.jpg",
+              "offer upto 40%"
+            )}
+            {createCard(
+              "https://png.pngtree.com/thumb_back/fw800/background/20241210/pngtree-adorable-happy-kids-shopping-with-colorful-bags-in-a-mall-image_16746860.jpg",
+              "offer upto 70%"
+            )}
+            {createCard(
+              "https://img.freepik.com/premium-photo/great-day-shopping-children-enjoy-shopping-red-background-visiting-clothing-mall-discount-sale-concept-kids-cute-girls-hold-shopping-bags-shopping-discount-season-special-offer_474717-28659.jpg",
+              "offer upto 30%"
+            )}
+            {createCard(
+              "https://media.istockphoto.com/id/1270844434/photo/cute-little-girl-on-shopping-portrait-of-a-kid-with-shopping-bags-shopping-girl.jpg?s=612x612&w=0&k=20&c=BE9EJSc5uioC-yTvQZFDIhXZs13ctGeE7pQsqFJ2D1w=",
+              "offer upto 90%"
+            )}
+          </div>
+        );
+      }
+
+      ReactDOM.render(multiCards(), document.getElementById("root"));
+    </script>
+  </body>
+</html>
