@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="./01_Task.css" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function CreateCard(props) {
+        return (
+          <div id="card">
+            <img src={props.image} alt="" width="250" height="100%" />
+
+            <section>
+              <h2>{props.title}</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+                excepturi vero deserunt, deleniti possimus incidunt modi
+                exercitationem pariatur nostrum maxime, repellat dolore. Autem
+                excepturi vero deserunt, deleniti possimus incidunt modi
+                exercitationem pariatur nostrum maxime, repellat dolore. Autem
+              </p>
+              <button>Profile Details</button>
+            </section>
+          </div>
+        );
+      }
+
+      function App() {
+        return (
+          <div>
+            <CreateCard
+              image={
+                "https://techcloudltd.com/wp-content/uploads/2024/06/male-professional-headshots-1024x638.webp"
+              }
+              title={"Rajat Verma"}
+            />
+            <CreateCard
+              image={
+                "https://img.freepik.com/premium-photo/portrait-young-professional-man-smiling_604472-8539.jpg"
+              }
+              title={"Riyaz Khan"}
+            />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>

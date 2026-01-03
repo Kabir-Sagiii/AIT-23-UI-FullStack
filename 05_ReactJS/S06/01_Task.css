@@ -1,0 +1,10 @@
+#card {
+  width: 600px;
+  height: 300px;
+  box-shadow: 0 0 10px blue;
+  display: flex;
+  margin: 50px;
+}
+#card section {
+  padding: 10px;
+}
