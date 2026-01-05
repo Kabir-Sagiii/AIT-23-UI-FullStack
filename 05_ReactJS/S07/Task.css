@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+}
+.header {
+  height: 90px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  height: 500px;
+  background-color: lightgray;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.aside {
+  background-color: lightcoral;
+}
+.footer {
+  height: 300px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}

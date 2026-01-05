@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="./Task.css" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function Header() {
+        return (
+          <div className="header">
+            <h1>Header Component</h1>
+          </div>
+        );
+      }
+
+      function Aside() {
+        return (
+          <div className="aside">
+            <h1>Aside</h1>
+          </div>
+        );
+      }
+
+      function Main() {
+        return (
+          <div className="main">
+            <Aside />
+          </div>
+        );
+      }
+
+      function Footer() {
+        return (
+          <div className="footer">
+            <h1>Footer Section</h1>
+          </div>
+        );
+      }
+
+      function App() {
+        return (
+          <div>
+            <Header />
+            <Main />
+            <Footer />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
