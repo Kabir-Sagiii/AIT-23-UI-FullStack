@@ -1,0 +1,10 @@
+.card {
+  width: 270px;
+  height: 300px;
+  box-shadow: 0 0 10px red;
+  text-align: center;
+  color: rgb(76, 65, 65);
+}
+.card h2 {
+  margin-top: 5px;
+}
