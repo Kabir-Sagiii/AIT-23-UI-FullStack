@@ -1,0 +1,28 @@
+<script>
+  function f1() {
+    const img = document.createElement("img");
+    img.width = "200";
+    img.height = "200";
+    img.src =
+      "https://i.pinimg.com/originals/6f/29/68/6f29681409710a2057f67ffd3f5b353c.png";
+
+    document.querySelector("body").appendChild(img);
+
+    document.querySelector("input").style.border = "3px solid green";
+  }
+</script>
+
+<style>
+  button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 11px 30px;
+  }
+  input {
+    border: 3px solid red;
+  }
+</style>
+
+<button onclick="f1()">Like</button>
+<input type="password" /><br /><br />
