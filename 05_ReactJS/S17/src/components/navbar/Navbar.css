@@ -1,0 +1,45 @@
+.navbar {
+  height: 80px;
+  box-shadow: 0 0 10px tomato;
+  display: grid;
+  grid-template-columns: 35% 45% 20%;
+}
+#brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#brand h1 {
+  font-size: 42px;
+  color: tomato;
+}
+
+#menus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#menus a {
+  text-decoration: none;
+  font-size: 19px;
+  margin-right: 50px;
+}
+
+#icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#icons i {
+  margin-right: 20px;
+  font-size: 29px;
+  color: tomato;
+}
+#icons button {
+  padding: 15px 30px;
+  border: none;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+}
