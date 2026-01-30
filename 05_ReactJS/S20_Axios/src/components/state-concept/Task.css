@@ -1,0 +1,22 @@
+.task {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  box-shadow: 0 0 10px green;
+  width: 1000px;
+  margin: 20px auto;
+}
+
+.content {
+  padding-left: 20px;
+}
+.content h1 {
+  margin-bottom: 20px;
+}
+.content p {
+  margin-bottom: 20px;
+}
+.content button {
+  padding: 13px 25px;
+  margin-right: 20px;
+}

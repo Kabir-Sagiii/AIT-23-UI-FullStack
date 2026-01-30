@@ -1,0 +1,12 @@
+.text {
+  width: 500px;
+  padding: 20px;
+  box-shadow: 0 0 10px green;
+  margin: 50px;
+}
+.display {
+  width: 400px;
+  padding: 20px;
+  box-shadow: 0 0 10px red;
+  margin: 30px;
+}
