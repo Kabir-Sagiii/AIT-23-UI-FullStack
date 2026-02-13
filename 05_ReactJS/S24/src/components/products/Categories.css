@@ -1,0 +1,7 @@
+.category img {
+  border-radius: 50%;
+  box-shadow: 0 0 10px black;
+}
+.categories img:hover {
+  border: 5px solid green;
+}

@@ -1,0 +1,41 @@
+.ad-kids {
+  grid-column: 1/4;
+  grid-row: 1/5;
+  box-shadow: 0 0 10px black;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7)),
+    url("https://th.bing.com/th/id/R.3650ae471afa84ee4da76cc0edf61575?rik=8WSLGkin00Ymkg&riu=http%3a%2f%2fwww.superstylinguk.com%2fwp-content%2fuploads%2f2016%2f04%2fphoto-2.jpg&ehk=DndYbEBQc01rteD8n3omY7Tszkz0hrsEAnk9bgQCDP0%3d&risl=&pid=ImgRaw&r=0");
+}
+.ad-mens {
+  grid-column: 4/6;
+  grid-row: 1/3;
+  box-shadow: 0 0 10px black;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7)),
+    url("https://th.bing.com/th/id/R.c557f00e7d1773cd29fd01795466468e?rik=MA61Zx%2fixTIubA&riu=http%3a%2f%2fk4fashion.com%2fwp-content%2fuploads%2f2019%2f01%2fOuterwear.jpg&ehk=XLDv2EvVPPZmO%2bxlHGsp%2bj4lMIoKh5zIIxz3t0O3ByQ%3d&risl=&pid=ImgRaw&r=0");
+}
+.ad-womens {
+  grid-column: 4/6;
+  grid-row: 3/5;
+  box-shadow: 0 0 10px black;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7)),
+    url("https://1.bp.blogspot.com/-w1778vysw-A/UrFFGd6VzHI/AAAAAAAAAQA/no_KA2DDIQc/s1600/Women+Clothing+(2).jpg");
+}
+
+.backgroundProps {
+  color: white;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.backgroundProps h1 {
+  color: tomato;
+
+  margin-bottom: 7px;
+}
+
+.backgroundProps p {
+  font-size: 18px;
+}

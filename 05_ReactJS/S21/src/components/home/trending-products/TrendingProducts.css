@@ -1,0 +1,15 @@
+.trending {
+  height: 400px;
+  margin: 50px auto;
+  width: 1300px;
+  display: grid;
+  grid-template-rows: 15% 85%;
+}
+.trending h1 {
+  color: tomato;
+  margin-left: 30px;
+}
+.home-card-contaner {
+  display: flex;
+  justify-content: space-evenly;
+}

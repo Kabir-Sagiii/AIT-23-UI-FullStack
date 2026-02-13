@@ -1,0 +1,10 @@
+.count {
+  padding: 20px;
+}
+.count button {
+  padding: 11px 20px;
+  margin-top: 20px;
+}
+.count h1 {
+  color: green;
+}
